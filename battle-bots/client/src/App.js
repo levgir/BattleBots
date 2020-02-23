@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Battle from "../src/pages/Battle";
-import Home from "../src/pages/Home";
-import NewBot from "../src/pages/NewBot";
-import TitleCard from "../src/pages/TitleCard";
+import Battle from "./pages/Battle";
+import Home from "./pages/Home";
+import NewBot from "./pages/NewBot";
+import TitleCard from "./pages/TitleCard";
 
 
 function App() {
