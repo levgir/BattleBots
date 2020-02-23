@@ -1,11 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Battle from "../src/pages/Battle";
+import Home from "../src/pages/Home";
+import NewBot from "../src/pages/NewBot";
+import TitleCard from "../src/pages/TitleCard";
+
 
 function App() {
   return (
-    <div className="App">
-      Hi!
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/newbot" component={NewBot} />
+        <Route exact path="/titlecard" component={TitleCard} />
+        <Route exact path="/battle" component={Battle} />
+      </div>
+    </Router>
   );
 }
 
